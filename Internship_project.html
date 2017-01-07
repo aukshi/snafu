@@ -1,0 +1,194 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" type="text/css" href="Basecss.css">
+
+	<script>
+			$(document).ready(function() {
+		  $('.nav-toggle').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Projects');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Projects');
+			  }
+			});
+		  });
+
+		});
+                
+                
+                $(document).ready(function() {
+		  $('.nav-toggle1').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Internships');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Internships');
+			  }
+                          
+			});
+		  });
+
+		});
+		</script> 
+</head>
+<body>
+<div class="header col-11-1 contentdiv w3-blue-grey" >
+    <center> <h1><b>SNNAFU</b></h1>
+        Its everything about engineering....</center>
+</div>
+
+
+<div class="row">
+
+<div class="col-2-1 ">
+
+    <a href="index.html"> <div class="menu contentdiv w3-purple">What's New</div></a>
+    <a href="PreEngineers.html"><div class="menu contentdiv w3-deep-purple">PreEngineers</div></a>
+    <a href="letsbegin.html"><div class="menu contentdiv w3-indigo">Let's Begin</div></a>
+    <a href="Internship_project.html"> <div class="menu contentdiv w3-blue">Projects and Internships</div></a>
+    <a href="HigherEdu_CompetitiveExams.html"> <div class="menu contentdiv w3-teal">Higher Education and competitive exams</div></a>
+    <a href="Placements.html"> <div class="menu contentdiv w3-green">Placements</div></a>
+</div>
+
+    
+        <div class="col-4-1 contentdiv w3-light-grey">
+     <p><button id="btn1" href="#collapse1" class="w3-btn w3-round-xxlarge nav-toggle col-12 w3-indigo">Project</button></p>
+     </div>
+  
+         <div class="col-4-1 contentdiv w3-light-grey">
+        <p><button id="btn2" href="#collapse2" class="w3-btn w3-round-xxlarge nav-toggle1 col-12 w3-indigo">Internship</button></p>
+                </div> 
+
+  <div id="collapse1" class="col-4-1" style="display:none">
+				
+         <div class="w3-teal col-12 marg">
+             <h3> Why projects are important?</h3>
+             <ul>
+                 <li>Project carries good credits during your assessment.Therefore it makes valuable contribution to your final score. </li>
+                 <li>In college we study theoretical part of a subject. Project is is something where you actually learn.</li>
+                 <li>A good project makes your resume stronger.</li>
+                 <li>You can publish your research paper if your topic invents or concludes something new.</li>
+                 <li>If it is a good application oriented project then you can have your own business model.</li>
+             </ul>
+         </div>
+         
+         <div class="w3-lime col-12 marg">
+             <h3> When to start preparing for the projects?</h3>
+                <ul>
+                    <li> Its not like a piece of cake to choose a project.Think about your project well before the time.
+                    </li>
+                    <li>Discuss with your group members.<br>Listen everyones ideas. Discuss about those ideas. Shortlist 2-3 of them.Study them and select one.</li>
+                    <li>If you are not able to shortlist one, discuss them with your teacher.</li>
+                    <li>Fix a good teacher in your project domain well before time. Take his guidance while choosing the topic. </li>
+                </ul>
+         </div>
+         
+           <div class="w3-teal col-12 marg">
+               <h3>How to choose a project?</h3>
+               <ul>
+                   <li>Choose your domain of interest.</li>
+                   <li>Search for the project mates interested in same domain.</li>
+                   <li>Search or invent an unique idea in that domain.</li>
+                   <li>Highlight the new and creative points in your project to discuss with your guide project mates.</li>
+                   <li>Your project should be either an useful product or it should be demonstration of an algorithm developed by you.
+</li>
+                   <li>Discuss with your project mates,guide and improve the idea to create a final problem statement.</li>
+               </ul>
+         </div>
+           <div class="w3-lime col-12 marg">
+               <h3>How to choose your project mates?</h3>
+               <ul>
+                   <li>Project group generally contains 3 to 5 people.</li>
+                   <li>After choosing domain start searching for your project mates who wants to do project in the same domain.</li>
+                   <li>Generally 3 types of people can be found in project groups:
+                       <ol><li>Person who is very serious about project. He plans the flow of project and other people follow him. He is the leader 
+of the project.</li>
+                           <li>The person having technical ability to work on the particular task and complete it.Generally such kind of people follows the flowchart of project and completes their assigned task.</li>
+                           <li>This category contains people who are technically not so strong but can do small tasks.<br> But they can do the other non technical procedures and 
+can arrange all the required things. They may help in drafting of the project.</li>
+                       </ol>
+                   </li>
+                   <li>Your group configuration should be like:<br>
+                       <br>
+                            One person of Type 1
+                       <br>
+                            Two or three people of type 2
+                       <br>
+                            Zero or one person of type 3
+                   </li>
+                   <li>Never have more than one type 1 people in the group.These people are kind of dominating in nature.This may lead to have clashes in group.</li>
+                   <li>Have at least two type 2 people.You can manage one type 3 person for your non technical needs. Rather than having two A type guys in a group prefer 
+having one type 3 person.</li>
+                   <li>In project groups you need to compromise few things.Solve the problems by discussion.Avoid misunderstandings.Maintain the bond between 
+group mates.<br>Be a great team! :)</li>
+               </ul>
+                    
+         </div>
+           <div class="w3-teal col-12 marg">
+               <h3>How to work on a project together?</h3>
+               <ul>
+                   <li>Plan your activities.</li>
+                   <li>Keep record of your plan and actual work.</li>
+                   <li>Practically plans may not work accurately due to some run time problems or modifications. 
+Modify your plan according to requirements, Track your progress.<br>This will help you to complete project well before time.</li>
+                   <li>Stay connected with your project guide.Let him know what work you are doing.</li>
+                   <li>Present well.Presentation is equally important to understand your project well.</li>
+                   <li>Keep proper documentation of your Project.Don't procrastinate it.Complete it on time.</li>
+               </ul>
+         </div>
+         
+    </div>
+   
+    
+        <div id="collapse2" class="col-4-1" style="display:none">
+              <div class="w3-lime col-12 marg">
+                  Work on your resume. Mention the exact field in which you want to do an internship.
+              </div>
+               <div class="w3-teal col-12 marg">
+                 Search for the job fairs around you.Apply to the companies in your field.  </div>
+             
+             <div class="w3-lime col-12 marg">
+                 Search for the job fairs around you.Apply to the companies in your field.  </div>
+             
+            <div class="w3-teal col-12 marg">
+                 If you are thinking about some particular companies then find out authenticated contact details of the company and communicate through E-mail.
+              </div> 
+             <div class="w3-lime col-12 marg">
+                Reply promptly if they ask for any kind of information.</div>
+               <div class="w3-teal col-12 marg">
+                After interview ask them about their expectations from you and other doubt you want to ask.</div>
+               I know it reallllly needs good editing..! :(
+    </div>
+
+    
+    
+    
+      </div>
+
+    </body>
+</html>

@@ -1,0 +1,444 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html><html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Basecss.css">
+ <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script>
+        /* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+$(document).ready(function() {
+		  $('.nav-toggle1').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Engineering is the right choice for you if..');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Engineering is the right choice for you if..');
+			  }
+                          
+			});
+		  });
+
+		});
+                
+                $(document).ready(function() {
+		  $('.nav-toggle2').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Other options than Engineering');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Other options than Engineering');
+			  }
+                          
+			});
+		  });
+
+		});
+                
+                
+                $(document).ready(function() {
+		  $('.nav-toggle3').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Myths about Engineering');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Myths about Engineering');
+			  }
+                          
+			});
+		  });
+
+		});
+                
+                $(document).ready(function() {
+		  $('.nav-toggle4').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Important entrance exams for Engineering');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Important entrance exams for Engineering');
+			  }
+                          
+			});
+		  });
+
+		});
+                $(document).ready(function() {
+		  $('.nav-toggle5').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('All branches of Engineering');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('All branches of Engineering');
+			  }
+                          
+			});
+		  });
+
+		});
+                $(document).ready(function() {
+		  $('.nav-toggle6').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('How to choose a good Engineering college');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('How to choose a good Engineering college');
+			  }
+                          
+			});
+		  });
+
+		});
+                
+                     $(document).ready(function() {
+		  $('.nav-toggle7').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Top colleges of Engineering in India');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Top colleges of Engineering in India');
+			  }
+                          
+			});
+		  });
+
+		});
+    </script>    
+
+</head>
+<body>
+<div class="header col-11-1 contentdiv w3-blue-grey" >
+    <center> <h1><b>SNNAFU</b></h1>
+        Its everything about engineering....</center>
+</div>
+
+
+<div class="row">
+
+<div class="col-2-1 ">
+
+    <a href="index.html"> <div class="menu contentdiv w3-purple">What's New</div></a>
+    <a href="PreEngineers.html"><div class="menu contentdiv w3-deep-purple">PreEngineers</div></a>
+    <a href="letsbegin.html"><div class="menu contentdiv w3-indigo">Let's Begin</div></a>
+    <a href="Internship_project.html"> <div class="menu contentdiv w3-blue">Projects and Internships</div></a>
+    <a href="HigherEdu_CompetitiveExams.html"> <div class="menu contentdiv w3-teal">Higher Education and competitive exams</div></a>
+    <a href="Placements.html"> <div class="menu contentdiv w3-green">Placements</div></a>
+</div>
+
+ <p><button id="btn1" href="#collapse1" class="w3-btn w3-round-xxlarge nav-toggle1 col-9-0 w3-indigo contentdiv">Engineering is the right choice for you if..</button></p>
+
+<div id="collapse1" class="contentdiv col-9 " style="display:none">
+    <ul>
+        <li> You like mathematics and you are good at it. Consider little higher level mathematics. Don't judge yorself on your 10th score.
+
+        <li> you are good at science. Specially physics.
+
+        <li> you like problem solving.
+
+        <li> you think out of box.
+
+        <li> you like to take challenges.
+
+        <li> you are curious about how the things work.
+
+        <li> you want to help people to improve their lives by solving their day to day problems technically.
+
+        <li> you like to work in teams.
+
+        <li> you really want to be an engineer.
+    </ul>
+</div>
+
+        <p><button id="btn2" href="#collapse2" class="w3-btn w3-round-xxlarge nav-toggle2 col-9-0 w3-indigo contentdiv">Other options than Engineering</button></p>
+
+    <div id="collapse2" class="contentdiv col-9" style="display:none">
+        <ul>
+            <li> Higher education in science and maths provides you good opportunities in research and teaching field.
+
+            <li> Career in hotel and hospitality management.
+
+            <li> Marine science and oceonology. Opportunities for aspirants.
+
+            <li> Research: Institutes like IISER provides great research opportunities.
+
+            <li> Defence research: DRDO.
+
+            <li> Opportunities in civil services: preparing for the exams like UPSC.
+
+            <li> Banking Exams.
+
+            <li> BBA/MBA: to have your own business.
+            <li> Fashion.
+
+            <li> Agriculture.
+
+            <li> Defence.
+
+            <li> Law.
+
+            <li> CA(Chartered Accountant).
+
+            <li> Journalism.
+                <br>
+and many more..
+        </ul>
+    </div>
+    
+           <p><button id="btn3" href="#collapse3" class="w3-btn w3-round-xxlarge nav-toggle3 col-9-0 w3-indigo contentdiv">Myths about Engineering</button></p>
+
+      <div id="collapse3" class="col-9 contentdiv" style="display:none">
+          <ul>
+              <li> An engineer can repair any electrical device.
+
+              <li> They know how to build robots, satellites, cars etc.
+
+              <li> If you are software engineer you are a good hacker.
+
+              <li> You need to study a lot for engineering.
+
+              <li> Engineering is better than plain sciences. 
+          </ul>
+      </div>
+    
+              <p><button id="btn4" href="#collapse4" class="w3-btn w3-round-xxlarge nav-toggle4 col-9-0 w3-indigo contentdiv">Important entrance exams for Engineering</button></p>
+
+     <div id="collapse4" class="col-9 contentdiv" style="display:none">
+         <ul>
+             <li> JEE Main(Joint Entrance Examination Main)
+
+             <li>JEE Advanced
+
+             <li>AIEEE(All India Engineering Entrance Examination)
+
+             <li>BITSAT(Birla Institute of Technology and Science Admission Test)
+
+             <li>ENAT(EPSI National Admission Test)
+
+             <li>VITEEE(Vellore Institute of Technology Engineering Entrance Exam)
+
+             <li>NAT(National Apptitude Test)
+
+             <li>NATA(National Aptitude Test in Architecture)
+         </ul>
+     </div>
+    
+              
+     <p><button id="btn5" href="#collapse5" class="w3-btn w3-round-xxlarge nav-toggle5 col-9-0 w3-indigo contentdiv">All branches of Engineering</button></p>
+
+ <div id="collapse5" class="col-9 contentdiv" style="display:none">
+     <ul>
+         <li>Automobile Engineering
+
+<li>Applied Electronics and Instrumentation Engineering
+
+<li>Agricultural Engineering
+
+<li>Aeronautical Engineering
+
+<li>Bio Technology
+
+<li>Biochemical Engineering
+
+<li>Civil Engineering
+
+<li>Chemical and Alcohol Technology
+
+<li>Computer Science Engineering
+
+<li>Chemical Engineering
+
+<li>Electronics & Instrumentation 
+
+<li>Engineering
+
+<li>Electronics & Telecomm Engineering
+
+<li>Electronics Engineering
+
+<li>Electronics Instrumentation & Control
+
+<li>Electrical & Electronics Engineering
+
+<li>Electrical Engineering
+
+<li>Electronics & Communication Engineering
+
+<li>Environmental Engineering
+
+<li>Industrial Production Engineering
+
+<li>Instrumentation & Control
+
+<li>Food Technology
+
+<li>Industrial Engineering
+
+<li>Instrumentation Engineering
+
+<li>Information Technology
+
+<li>Leather Technology
+
+<li>Marine Engineering
+
+<li>Material Science
+
+<li>Mechanical & Industrial Engineering
+
+<li>Mechanical Engineering
+
+<li>Man Made Fibre Technology
+
+<li>Manufacturing Technology
+
+<li>Oil Technology
+
+<li>Metallurgical Engineering
+
+<li>Production Engineering
+
+<li>Plastic Technology
+
+<li>Textile Engineering
+
+<li>Textile Technology
+
+<li>Production & Industrial Engineering
+     </ul>
+ </div>      
+     
+     
+     
+        <p><button id="btn6" href="#collapse6" class="w3-btn w3-round-xxlarge nav-toggle6 col-9-0 w3-indigo contentdiv">How to choose a good Engineering college</button></p>
+
+ <div id="collapse6" class="col-9 contentdiv" style="display:none">
+     <ul>
+    <li>   <b> Infrastructure: </b>This is the most important factor while choosing a college.It includes labs, workshop, computer labs, sufficient classrooms, all the equipments in labs etc.
+
+    <li>      <b>Placements:</b> This may specify your future after four years of engineering.
+Gather the information about which companies visit the college for placements and statistics of annual placement.
+
+    <li><b>Alumni guidance: </b>To know about the college from the person who learnt there helps a lot in understanding the culture of that college.
+
+    <li><b>Faculty:</b> Faculty should be well experienced, sufficiently qualified , concerned about students understanding and updated with recent developements in their field.
+
+    <li><b>Location and facilities:</b> Location of the college should be convenient for you because it directly affects your daily lifestyle. Facilities like hostel, internet, library, mess should be available as per your requirement.
+     </ul>
+        </div>
+
+        
+           <p><button id="btn7" href="#collapse7" class="w3-btn w3-round-xxlarge nav-toggle7 col-9-0 w3-indigo contentdiv">Top colleges of Engineering in India</button></p>
+
+    <div id="collapse7" class="col-9 contentdiv" style="display:none" float="right">
+        <ul>
+            <li>Indian Institute of Technology Madras 
+
+<li>Indian Institute of Technology Bombay 
+
+<li>Indian Institute of Technology Delhi 
+
+<li>Indian Institute of Technology Kharagpur 
+
+<li>Indian Institute of Technology Kanpur 
+
+<li>Indian Institute of Technology Roorkee 
+
+<li>Indian Institute of Technology Hyderabad 
+
+<li>Indian Institute of Technology Gandhinagar 
+
+<li>Indian Institute of Technology Ropar 
+
+<li>Indian Institute of Technology Patna 
+
+<li>Indian Institute of Technology Guwahati 
+
+<li>National Institute of Technology Tiruchirappalli 
+
+<li>Vellore Institute of Technology, Vellore 
+
+<li>Indian Institute of Technology (BHU), Varanasi 
+
+<li>Sardar Vallabhbhai National Institute of Technology Surat 
+
+<li>Indian Institute of Technology Indore 
+
+<li>Birla Institute of Technology, Ranchi 
+
+<li>Visvesvarya National Institute of Technology Nagpur 
+
+<li>National Institute of Technology Rourkela
+
+<li>Indian Institute of Technology Mandi 
+
+<li>College of Engineering, Pune	1854 
+
+<li>National Institute of Technology Karnataka
+
+<li>Motilal Nehru National Institute of Technology Allahabad 
+
+<li>PSG College of Technology, Coimbatore 
+
+<li>Indian Institute of Technology Jodhpur 
+        </ul>
+ </div>  
+            </div>  
+    </body>
+</html>

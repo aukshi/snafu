@@ -1,0 +1,42 @@
+<html>
+ <head>
+	<title>jQuery toggle to display and hide content</title>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<script>
+		$(document).ready(function() {
+		  $('.nav-toggle').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Projects');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Projects');
+			  }
+			});
+		  });
+
+		});
+		</script>
+		
+	</head>
+	<body>
+		<section class="round-border">
+			<h2>jQuery toggle() to hide/show collapse content</h2>
+			<div>
+				
+                                <p><button href="#collapse1" class="w3-btn w3-round-xxlarge nav-toggle">Projects</button></p>
+			</div>
+			<div id="collapse1" style="display:none">
+				<p>Bla bla bla bla</p>
+			</div>
+		</section>
+	</body>
+</html>

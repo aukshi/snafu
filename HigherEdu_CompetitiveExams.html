@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" type="text/css" href="Basecss.css">
+        <script>
+            $(document).ready(function() {
+		  $('.nav-toggle').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Higher Education options..');
+                                
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Higher Education options..');
+                             
+			  }
+                          
+			});
+		  });
+
+		});
+                
+                
+                $(document).ready(function() {
+		  $('.nav-toggle1').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Internships');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Internships');
+			  }
+                          
+			});
+		  });
+
+		});
+                        </script>
+        
+    </head>
+    <body>
+<div class="header col-11-1 contentdiv w3-blue-grey" >
+    <center> <h1><b>SNNAFU</b></h1>
+        Its everything about engineering....</center>
+</div>
+
+
+<div class="row">
+
+<div class="col-2-1 ">
+
+    <a href="index.html"> <div class="menu contentdiv w3-purple">What's New</div></a>
+    <a href="PreEngineers.html"><div class="menu contentdiv w3-deep-purple">PreEngineers</div></a>
+    <a href="letsbegin.html"><div class="menu contentdiv w3-indigo">Let's Begin</div></a>
+    <a href="Internship_project.html"> <div class="menu contentdiv w3-blue">Projects and Internships</div></a>
+    <a href="HigherEdu_CompetitiveExams.html"> <div class="menu contentdiv w3-teal">Higher Education and competitive exams</div></a>
+    <a href="Placements.html"> <div class="menu contentdiv w3-green">Placements</div></a>
+</div>
+
+     <div class="col-4 contentdiv w3-light-grey">
+     <p><button id="btn1" href="#collapse1" class="w3-btn w3-round-xxlarge nav-toggle col-12 w3-indigo">Higher Education options..</button></p>
+     </div>
+    
+    <div class="col-4 contentdiv w3-light-grey">
+        <p><button id="btn2" href="#collapse2" class="w3-btn w3-round-xxlarge nav-toggle1 col-12 w3-indigo">Competitive Exams for government Jobs</button></p>
+    </div> 
+    
+    
+         <div id="collapse1" class="col-4-1" style="display:none">
+         
+         <div class="col-11 w3-light-grey">
+             <h3>Technical:</h3>
+             <ul>
+                 <li>IIT – Joint Admission Test for M.Sc (JAM)
+                 <li>Common Entrance Exam for Design (CEED)
+                 <li>Graduate Aptitude Test in Engineering(GATE)
+                 <li>IIIT PG Entrance
+                 <li>BITS Higher Degree Admission Test
+             </ul>
+
+             <h4>For MBA:</h4>
+             <ul>
+                 <li>Common Admission Test (CAT)
+                 <li>Common Management Admission Test (CMAT)
+                 <li>Xavier Aptitude Test (XAT)
+                 <li>The Indian Institute of Foreign Trade (IIFT)
+                 <li>NMAT
+                 <li>Symbiosis National Aptitude (SNAP)
+                 <li>Management Aptitude Test (MAT)
+                 <li>Maharashtra Common Entrance Test (MH-CET)
+                 <li>IBSAT
+                 <li>ATMA(AIMS Test for Management Admissions)
+             </ul>
+             <h4>Post graduation in other countries:</h4>
+             <ul>
+             <li>Graduate Management Admission Test (GMAT)
+             <li>Graduate Record Examinations (GRE)
+                 </ul>
+                    
+         </div>
+     </div>
+    
+    
+    <div id="collapse2" class="col-4-1" style="display:none">     
+        <div class="col-11 w3-light-grey">
+
+           <h4>  For Governmaint jobs:</h4>
+                     <ul>
+                     <li>UPSC
+                     <li>Civil Services Examination (CSE)
+                     <li>Indian Economic Service Examination (IES)
+                     <li>Indian Statistical Service Examination (ISS)
+                     </ul>
+                     <h4>Banking:</h4>
+                     <ul>
+                         <li>SBI PO
+                         <li>IBPS PO
+                         <li>National Bank for Agriculture & Rural Development (NABARD)
+                         <li>RBI Grade A and Grade B Exams
+                         <li>ICICI PO Exams
+                     </ul>
+    </div>
+     </div>
+    
+</div>
+    </body>

@@ -1,0 +1,236 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Basecss.css">
+ <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script>
+        /* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+$(document).ready(function() {
+    
+     $('.nav-toggle1').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Know your college..');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Know your college..');
+			  }
+                          
+			});
+		  });
+});
+		
+                
+$(document).ready(function() {
+       $('.nav-toggle2').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Make new friends..');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Make new friends..');
+			  }
+                          
+			});
+		  });
+
+});
+                
+      
+    
+$(document).ready(function() {
+    
+		  $('.nav-toggle3').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Be a member of various groups you like..');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Be a member of various groups you like..');
+			  }
+                          
+			});
+		  });
+
+});
+
+
+$(document).ready(function() {
+       $('.nav-toggle4').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Maintain your CPI..');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Maintain your CPI..');
+			  }
+                          
+			});
+		  });
+});
+                  
+
+$(document).ready(function() {
+       $('.nav-toggle5').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Form a study group(if required)..');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Form a study group(if required)..');
+			  }
+                          
+			});
+		  });
+});
+                  
+
+$(document).ready(function() {
+       $('.nav-toggle6').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html(' Do not procrastinate your work..');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Do not procrastinate your work..');
+			  }
+                          
+			});
+		  });
+});
+    
+
+
+                </script>
+</head>
+<body>
+<div class="header col-11-1 contentdiv w3-blue-grey" >
+    <center> <h1><b>SNNAFU</b></h1>
+        Its everything about engineering....</center>
+</div>
+
+
+<div class="row">
+
+<div class="col-2-1 " style="height:2000px">
+
+    <a href="index.html"> <div class="menu contentdiv w3-purple">What's New</div></a>
+    <a href="PreEngineers.html"><div class="menu contentdiv w3-deep-purple">PreEngineers</div></a>
+    <a href="letsbegin.html"><div class="menu contentdiv w3-indigo">Let's Begin</div></a>
+    <a href="Internship_project.html"> <div class="menu contentdiv w3-blue">Projects and Internships</div></a>
+    <a href="HigherEdu_CompetitiveExams.html"> <div class="menu contentdiv w3-teal">Higher Education and competitive exams</div></a>
+    <a href="Placements.html"> <div class="menu contentdiv w3-green">Placements</div></a>
+</div>
+ 
+       
+    <p><button id="btn1" href="#collapse1" class="w3-btn w3-round-xxlarge nav-toggle1 col-9-0 w3-indigo contentdiv">Know your college..</button></p>
+    <div id="collapse1" class="contentdiv col-9-0 w3-light-grey" style="display:none">
+        <ul>
+            <li>Visit all the places in your college.
+            <li>Where is the library,laboratories, gym, Auditorium, xerox center, canteen, playground, parking,reading hall etc.
+            <li>By this you will be able to locate the appropriate places on time. 
+            <li>Talk to your seniors about college,they will give you important and practical information. 
+            <li>Eg. they can tell you which one is the better food spot or library is more silent or reading hall etc.
+        </ul>
+    </div>
+
+    
+     <p><button id="btn2" href="#collapse2" class="w3-btn w3-round-xxlarge nav-toggle2 col-9-0 w3-indigo contentdiv">Make new friends..</button></p>
+   
+       <div id="collapse2" class="contentdiv col-9-0 w3-light-grey" style="display:none">
+        <ul>
+            <li>Talk to people in your class or hostel mates.  
+            <li>You will feel more confident if you have friends.
+            <li>You will not feel homesick. 
+            </ul>
+    </div>
+
+    
+  
+      <p><button id="btn3" href="#collapse3" class="w3-btn w3-round-xxlarge nav-toggle3 col-9-0 w3-indigo contentdiv">Be a member of various groups you like..</button></p>
+     <div id="collapse3" class="contentdiv col-9-0" style="display: none">
+          <ul>
+              <li>Know about various groups in your college. 
+              <li>Be a member of that group you are interested in. 
+              <li>Don't join too many groups because it will make you too much busy and you won't get time for studies. 
+          </ul>
+      </div>
+    
+       <p><button id="btn4" href="#collapse4" class="w3-btn w3-round-xxlarge nav-toggle4 col-9-0 w3-indigo contentdiv">Maintain your CPI..</button></p>
+      <div id="collapse4" class="contentdiv col-9-0 w3-light-grey" style="display: none">
+          <ul>
+              <li>Along with everything else. 
+              <li>Understand the concepts from first day. 
+              <li>At the end of the day, make sure that you have understood everything till that date. 
+              <li>Maintain decent pointer from first year. 
+              <li>It will decrease your load in future. 
+              <li>More than pointer focus on understanding the concepts. 
+              <li>It helps in placements and other opportunities in future.
+          </ul>
+      </div>
+  
+    
+    
+      <p><button id="btn5" href="#collapse5" class="w3-btn w3-round-xxlarge nav-toggle5 col-9-0 w3-indigo contentdiv">Form a study group(if required)..</button></p>
+   
+
+      <p><button id="btn6" href="#collapse6" class="w3-btn w3-round-xxlarge nav-toggle6 col-9-0 w3-indigo contentdiv">Don't procrastinate your work..</button></p>
+   <div id="collapse6" class="contentdiv col-9-0 w3-light-grey" style="display:none">
+           <ul>
+              <li>Don't Procrastinate your work.
+              <li>Complete your assignments on time. 
+              <li>It will help you to avoid panic attacks at the time of submissions. 
+              <li>Also it will maintain properness in your assignments and good impression. 
+              <li>Also you will get more time to study at time of viva's, practical and theory exams.
+         </ul>
+      </div>
+     
+</div>
+    </body>
+</html>

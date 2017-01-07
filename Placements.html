@@ -1,0 +1,125 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="Basecss.css">
+ <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script>
+        
+$(document).ready(function() {
+       $('.nav-toggle1').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('Criteria:');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('Criteria:');
+			  }
+                          
+			});
+		  });
+});
+
+
+$(document).ready(function() {
+       $('.nav-toggle2').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('General Procedure:');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('General Procedure:');
+			  }
+                          
+			});
+		  });
+});
+    
+    
+    </script>
+</head>
+<body>
+<div class="header col-11-1 contentdiv w3-blue-grey" >
+    <center> <h1><b>SNNAFU</b></h1>
+        Its everything about engineering....</center>
+</div>
+
+
+<div class="row">
+
+<div class="col-2-1" style="height: 1000px">
+
+    <a href="index.html"> <div class="menu contentdiv w3-purple">What's New</div></a>
+    <a href="PreEngineers.html"><div class="menu contentdiv w3-deep-purple">PreEngineers</div></a>
+    <a href="letsbegin.html"><div class="menu contentdiv w3-indigo">Let's Begin</div></a>
+    <a href="Internship_project.html"> <div class="menu contentdiv w3-blue">Projects and Internships</div></a>
+    <a href="HigherEdu_CompetitiveExams.html"> <div class="menu contentdiv w3-teal">Higher Education and competitive exams</div></a>
+    <a href="Placements.html"> <div class="menu contentdiv w3-green">Placements</div></a>
+</div>
+
+    
+    <p><button id="btn1" href="#collapse1" class="w3-btn w3-round-xxlarge nav-toggle1 col-9-0 w3-indigo contentdiv"><b>Criteria:</b></button></p>
+ 
+        <div id="collapse1" class="col-9-0 w3-light-grey contentdiv" style="display: none">
+        <ul>
+            <li>Keep your percentage above 60%. Most of the companies have criteria of 60% and more. Few companies can apply criteria of 70 or 75%. So if you want any company then study its criteria and maintain your percentage accordingly.
+            <li>Try hard to clear all the subjects on the time. In case if you have any backlog,clear it before your final year.Most of the times LIVE backlogs are not acceptable.
+        </ul>
+        </div>
+
+   
+  
+       <p><button id="btn2" href="#collapse2" class="w3-btn w3-round-xxlarge nav-toggle2 col-9-0 w3-indigo contentdiv"><b>General Procedure:</b></button></p>
+  <div id="collapse2" class="col-8 w3-light-grey contentdiv" style="display:none">
+           
+            <div class="col-8">
+            <b>Introductory session of the company:</b><br>
+                It gives you general information about company. What the company is about. What is its turnover. What is its culture. How will be your work 
+environment. Which posts they are offering you etc.
+            </div>
+        <div class="col-8"></div>
+            <div class="col-8 w3-light-grey contentdiv">
+                <b>Aptitude test(General aptitude+ Coding):</b><br>
+                Aptitude test consist of General quantitative aptitude,Data analysis, programming questions according to the need of company. They may skip the programming questions according to the need of their company. There can be coding test.
+            </div>
+        <div class="col-8"></div>
+            <div class="col-8 w3-light-grey contentdiv">
+                <b>Group Discussion(GD):</b><br>
+                After you crack aptitude test the next round is GD. It is not compulsory for all companies. Here they will give you a topic and you have to discuss about that topic in group of 5-6 people. Here you are expected to participate actively in the conversation and put your points efficiently. If you are able to contribute significantly,if you can conclude the discussion, if you can start the discussion you can get points for that. It also verifies your listening skills.
+            </div>
+        <div class="col-8"></div>
+            <div class="col-8 w3-light-grey contentdiv">
+                <b>Interviews(Technical+HR):</b><br>
+                Mainly there are two types of interviews:<br>
+            <br>
+            <b>1. Technical:</b>
+	In technical interview,inerviewer asks the questions abput technical stuff in the domain of your work.They can ask you to solve some coding problems. They may ask about basic concepts you wrote in your CV. They may ask about your final year and other projects. They may ask you few puzzles.
+        <br>
+            
+        <b>2. HR:</b>
+	In HR interview they check about your extra and cocurricural activities. They ask you questions based on your CV and the activities you mentioned in CV. They will ask you few other questions to understand your way to think and your your abilities.
+
+            </div>
+
+
+
+    </div>
+</div>
+    </body>
+</html>
