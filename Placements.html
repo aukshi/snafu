@@ -18,7 +18,7 @@ $(document).ready(function() {
 			//make the collapse content to be shown or hide
 			var toggle_switch = $(this);
 			$(collapse_content_selector).toggle(function(){
-			  if($(this).css('display')=='none'){
+			  if($(this).css('display')==='none'){
                                 //change the button label to be 'Show'
 				toggle_switch.html('Criteria:');
 			  }else{
@@ -39,7 +39,7 @@ $(document).ready(function() {
 			//make the collapse content to be shown or hide
 			var toggle_switch = $(this);
 			$(collapse_content_selector).toggle(function(){
-			  if($(this).css('display')=='none'){
+			  if($(this).css('display')==='none'){
                                 //change the button label to be 'Show'
 				toggle_switch.html('General Procedure:');
 			  }else{
@@ -56,7 +56,7 @@ $(document).ready(function() {
 </head>
 <body>
 <div class="header col-11-1 contentdiv w3-blue-grey" >
-    <center> <h1><b>SNNAFU</b></h1>
+    <center> <h1><b>SNAAFU</b></h1>
         Its everything about engineering....</center>
 </div>
 
@@ -78,8 +78,8 @@ $(document).ready(function() {
  
         <div id="collapse1" class="col-9-0 w3-light-grey contentdiv" style="display: none">
         <ul>
-            <li>Keep your percentage above 60%. Most of the companies have criteria of 60% and more. Few companies can apply criteria of 70 or 75%. So if you want any company then study its criteria and maintain your percentage accordingly.
-            <li>Try hard to clear all the subjects on the time. In case if you have any backlog,clear it before your final year.Most of the times LIVE backlogs are not acceptable.
+            <li>Keep your percentage above 60%. Most of the companies have criteria of 60% and more. Few companies can apply criteria of 70 or 75% (and they are the one's who pay a lot). So if you want any company then study its criteria and maintain your percentage accordingly.
+            <li>Try hard to clear all the subjects on the time. In case if you have any backlog,clear it before your final year. Most of the times LIVE backlogs are not acceptable.
         </ul>
         </div>
 
@@ -89,19 +89,37 @@ $(document).ready(function() {
   <div id="collapse2" class="col-8 w3-light-grey contentdiv" style="display:none">
            
             <div class="col-8">
-            <b>Introductory session of the company:</b><br>
-                It gives you general information about company. What the company is about. What is its turnover. What is its culture. How will be your work 
-environment. Which posts they are offering you etc.
+            <b>Introductory session by the company:</b><br>
+                <p>It gives you general information about company. What the company is about. What is its turnover. What is its culture. How will be your work 
+                    environment. Which posts they are offering you etc. Pay attention to it.</p>
             </div>
         <div class="col-8"></div>
             <div class="col-8 w3-light-grey contentdiv">
                 <b>Aptitude test(General aptitude+ Coding):</b><br>
-                Aptitude test consist of General quantitative aptitude,Data analysis, programming questions according to the need of company. They may skip the programming questions according to the need of their company. There can be coding test.
+                <p>
+                Aptitude test consist of General quantitative aptitude,Data analysis, programming questions according to the need of company. Programming questions are for IT/CS companies. There can be coding test also.
+                Core companies test your knowledge in that are. For ex. a mechanical company will ask you from mechanical section.
+                </p><br>
+                <p>
+                    You can use following books for the preparation of aptitude tests:</p>
+                <ul>
+                    <li>
+                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=aukshi-21&marketplace=amazon&region=IN&placement=9352602242&asins=9352602242&linkId=af2de35b67fb0e6fbcb9fd0f1049d50c&show_border=true&link_opens_in_new_window=true"></iframe>
+                    </li>
+                    
+                    <li>
+                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=aukshi-21&marketplace=amazon&region=IN&placement=8121924987&asins=8121924987&linkId=deae12a936586bd8694e3abe1064051e&show_border=true&link_opens_in_new_window=true"></iframe>
+                    </li>
+                </ul>
+                
+                
             </div>
         <div class="col-8"></div>
             <div class="col-8 w3-light-grey contentdiv">
                 <b>Group Discussion(GD):</b><br>
-                After you crack aptitude test the next round is GD. It is not compulsory for all companies. Here they will give you a topic and you have to discuss about that topic in group of 5-6 people. Here you are expected to participate actively in the conversation and put your points efficiently. If you are able to contribute significantly,if you can conclude the discussion, if you can start the discussion you can get points for that. It also verifies your listening skills.
+                <p>
+                After you crack aptitude test the next round is GD. It is not compulsory for all companies. Here they will give you a topic and you have to discuss about that topic in group of 5-6 people. You are expected to participate actively in the conversation and put your points efficiently. If you are able to contribute significantly, if you can conclude the discussion, if you can start the discussion you can get brownie points for that. It also verifies your listening skills.
+                </p>
             </div>
         <div class="col-8"></div>
             <div class="col-8 w3-light-grey contentdiv">
@@ -109,11 +127,17 @@ environment. Which posts they are offering you etc.
                 Mainly there are two types of interviews:<br>
             <br>
             <b>1. Technical:</b>
-	In technical interview,inerviewer asks the questions abput technical stuff in the domain of your work.They can ask you to solve some coding problems. They may ask about basic concepts you wrote in your CV. They may ask about your final year and other projects. They may ask you few puzzles.
-        <br>
+	In technical interview, interviewer will ask questions about technical stuff in your domain. He may also ask you to solve a puzzle. Be thorough with your CV, as they will ask questions mostly about the subject's you have mentioned in your CV. They will certainly ask you about your projects. CS/IT students can be asked to code as well.
             
         <b>2. HR:</b>
-	In HR interview they check about your extra and cocurricural activities. They ask you questions based on your CV and the activities you mentioned in CV. They will ask you few other questions to understand your way to think and your your abilities.
+	In HR interview they check about your extracurricular and cocurricular activities. They ask you questions based on your CV and the activities that you have mentioned in CV. They will ask you few other questions to understand the way you think. They will put you under pressure and will see how you behave. Be ready with the answers of a few questions like:
+        <ul>
+            <li>Tell me something about yourself/ Introduce yourself.
+            <li>Why do you want to join this company?</li>
+            <li>Why should we hire you?</li>
+            <li>What are your strengths and weaknesses?</li>
+            <li>What if I select/reject you?</li>
+        </ul>
 
             </div>
 
